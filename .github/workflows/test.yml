@@ -34,3 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      # Runs Hello World in Node.js
+      - name: Hello World in Node.js
+        run: |
+          node -e "console.log('Hello World in Node.js')"
+      
