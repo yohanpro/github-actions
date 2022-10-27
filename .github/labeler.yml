@@ -1,3 +1,6 @@
+# labeler "full" schema
+
+# enable labeler on issues, prs, or both.
 enable:
   issues: true
   prs: true
