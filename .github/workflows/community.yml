@@ -1,0 +1,17 @@
+name: auto labeling
+on:
+  pull_request:
+    types: [opened]
+    branches:
+      - main
+jobs:
+
+  labeler:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check Labels
+      id: labeler
+      uses: jimschubert/labeler-action@v2
+      with:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
