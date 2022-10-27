@@ -1,10 +1,9 @@
-name: Community
-on: 
-  issues:
-    types: [opened, edited, milestoned]
-  pull_request_target:
+name: auto labeling
+on:
+  pull_request:
     types: [opened]
-
+    branches:
+      - main
 jobs:
 
   labeler:
